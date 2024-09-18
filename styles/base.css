@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+nav{
+
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 30px 30px 30px;
+}
+
+.card {
+    border: solid black 1px;
+    border-radius: 15px;
+}
+
+.fess {
+    width: 800px;
+}
+
+.sec {
+    width: 400px;
+}
+
+.title {
+    background-color: navy;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    color:#fff;
+    padding: 10px;
+}
+
+.cont {
+    display: flex;
+    margin: 20px 20px 50px 20px;
+}
+
+.divide {
+    text-align: center;
+}
+
+hr {
+    width: 700px;
+    margin: 10px auto 35px;
+
+}
+
+.third {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    padding: 60% 0 60% 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+footer {
+    text-align: center;
+}
+
+/* mobile **************************/
+header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto 20px auto;
+	max-width: 1500px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: solid rgb(190, 190, 211);
+}
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+footer {
+	margin: 0.25rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+}
+
+.highlight {
+	color: navy;
+	font-weight: 700;
+	font-family: hebrew;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    /* styles for mobile */
+}
+  
+  /* Tablet */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* styles for tablet */
+}
+  
+  /* Desktop */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* styles for desktop */
+}
+  
+  /* Large Desktop */
+  @media (min-width: 1025px) {
+    /* styles for large desktop */
+}
+  
+  
+  
