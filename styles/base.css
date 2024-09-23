@@ -184,8 +184,8 @@ footer {
       padding: 0 20px;
     }
     .card {
-      width: 100;
-      width: auto;
+      width: 100px;
+      
     }
     .fess {
       width: 70%;
@@ -223,14 +223,11 @@ footer {
     main {
       padding: 0 40px;
     }
-    .card {
-      width: auto;
-    }
     .fess {
-      width: 50%;
+      width: 70%;
     }
     .sec {
-      width: 50%;
+      width: 40%;
     }
   }
   
