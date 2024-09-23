@@ -5,6 +5,10 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* add this */
+    overflow-x: hidden; /* add this */
 	font-family: "Sansita", sans-serif;
 }
 
@@ -16,8 +20,18 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 0 30px 30px 30px;
+    width: 100vw; /* add this */
+    padding: 0 20px; /* adjust padding */
+    box-sizing: border-box;
+  
 }
+.container {
+    width: 100%; /* add this */
+    max-width: 100%; /* add this */
+    padding: 0 20px; /* adjust padding */
+    box-sizing: border-box;
+  }
+  
 
 .card {
     border: solid black 1px;
@@ -142,23 +156,86 @@ footer {
 
 /* Mobile */
 @media (max-width: 480px) {
-    /* styles for mobile */
-}
+    main {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .card {
+      width: 100%;
+    }
+    .fess {
+      width: 100%;
+    }
+    .sec {
+      width: 100%;
+    }
+    .third {
+      flex-direction: column;
+    }
+    .links {
+      padding: 20px;
+    }
+  }
   
   /* Tablet */
   @media (min-width: 481px) and (max-width: 768px) {
-    /* styles for tablet */
-}
+    main {
+      flex-direction:column;
+      padding: 0 20px;
+    }
+    .card {
+      width: 100;
+      width: auto;
+    }
+    .fess {
+      width: 70%;
+    }
+    .sec {
+      width: 30%;
+     } 
+    .third {
+        flex-direction: column;
+   
+    }
+    .cont {
+        flex-direction:column;
+    }
+  }
   
   /* Desktop */
   @media (min-width: 769px) and (max-width: 1024px) {
-    /* styles for desktop */
-}
+    main {
+      padding: 0 30px;
+    }
+    .card {
+        width: 24%;
+    }
+    .fess {
+      width: 60%;
+    }
+    .sec {
+      width: 40%;
+    }
+  }
   
   /* Large Desktop */
   @media (min-width: 1025px) {
-    /* styles for large desktop */
-}
+    main {
+      padding: 0 40px;
+    }
+    .card {
+      width: auto;
+    }
+    .fess {
+      width: 50%;
+    }
+    .sec {
+      width: 50%;
+    }
+  }
+  
+  
+  
   
   
   
