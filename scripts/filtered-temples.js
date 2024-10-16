@@ -18,8 +18,6 @@ ham.addEventListener('click', ()=>{
 })
 
 // Main header code
-
-const home = document.getElementById("home");
 const old = document.getElementById("old");
 const newer = document.getElementById("new");
 const large = document.getElementById("large");
@@ -113,15 +111,15 @@ const temples = [
         templeName: "Kinshasa, Democratic Republic Of The Congo Temple",
         location: "Kinshasa, Democratic Republic of the Congo",
         dedicated: "2019, April, 14",
-        area: 116642,
+        area: 12000,
         imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3533-main.jpg"
       },
       {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl:"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        templeName: "Durban South Africa Temple",
+        location: "Durban, South Africa",
+        dedicated: "2020, February, 16",
+        area: 19860,
+        imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/durban-south-africa-temple/durban-south-africa-temple-7936-main.jpg"
       },
     // Add more temple objects here...
   ];
