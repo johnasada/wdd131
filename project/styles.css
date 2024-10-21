@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.purpose{
+  text-align: center;
+  color: var(--primary-color);
+}
+.FAQ{
+  text-align: center;
+  border: solid, beige;
+  background-color: #898121;
+  border-radius: 50px;
+
+}
+.FAQ a{
+  text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background-image: url('image/hero.jpg');
+    background-size: cover;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#F87A53;
+}
+.color{
+  margin-left: 10%;
+}
+.hero-image {
+    width: 100%;
+    height: 0%;
+    object-fit: cover;
+}
+
+.directory {
+    padding: 2em;
+}
+
+.directory-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Londrina+Sketch";
+}
+
+.directory-item {
+    margin: 20px;
+    width: calc(33.33% - 20px);
+}
+
+.directory-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.events {
+    padding: 2em;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-item {
+    margin: 20px;
+    width: calc(33.33)
+}
+:root {
+    --primary-color: #4C4B16; /* Deep Orange */
+    --secondary-color: #E6C767; /* Green */
+    --background-color: #f7f7f7;
+    --text-color: #0a0202;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  /* Header styles */
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+
+  }
+  
+  header h1 {
+    font-size: 300px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation styles */
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Card styles */
+  
+  #card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #eee; /* Placeholder color */
+    background-image: linear-gradient(to bottom, #eee, #ddd);
+    background-size: 100% 20px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+  
+  .card-info {
+    padding: 20px;
+  }
+  
+  /* Placeholder text */
+  
+  .card-info::before {
+    content: "Temple Image";
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .membership{
+    text-align: center;
+  }
+  .footer {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color); /* Orange color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  /* Responsive design for smaller screens */
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  
+  
