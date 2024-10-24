@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | My State Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <!-- Membership Section -->
+<section class="membership">
+    <h2>Join Our Chamber</h2>
+    <p>Benefits of membership:</p>
+    <ul>
+      <li>Networking opportunities</li>
+      <li>Business promotion</li>
+      <li>Advocacy and support</li>
+    </ul>
+    <button id="join-button">Join Now</button>
+    <div class="membership-form" style="display: none;">
+      <h3>Membership Application Form</h3>
+      <form id="membership-form" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="business-name">Business Name:</label>
+        <input type="text" id="business-name" name="business-name"><br><br>
+        <label for="business-photo">Business Photo:</label>
+        <input type="file" id="business-photo" name="business-photo" accept="image/*"><br><br>
+        <button id="submit-button">Submit Application</button>
+      </form>
+    </div>
+  </section>
+  
+  
+    <script src="membership.js"></script>
+</body>
+</html>
+
