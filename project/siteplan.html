@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My State Chamber of Commerce Site</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="(link unavailable)" rel="stylesheet">
+    <script src="scripts/chamber.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -15,63 +15,70 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="admin.html">Admin</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Business Directory</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- Modified link with ID reference -->
+                <li><a href="#directory-section">Business Directory</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="membership.html">Membership</a></li>
             </ul>
-        </nav>        
+        </nav>
     </header>
-
     <!-- Hero Section -->
     <section class="hero">
+        <img src="image/hero.jpg" alt="Hero Image" class="hero-image">
         <h1>Welcome to My State Chamber of Commerce Site</h1>
-    </section><br><br><br>
-    <section class="purpose"><h1>Our website serves as a central hub for business owners, entrepreneurs, and community leaders to connect, grow, and thrive. Our purpose is to provide valuable resources, information, and services to promote economic development, advocacy, and community engagement in [City/Region].</h1>
-    </section> <br><br><br>
-    <section class="FAQ"><h1>FAQ</h1> <a href="">I'm thinking of starting a new retail business in downtown [City]. 
-        What resources and support can the Chamber provide to help me get started?</a><br><br><br></section><br><br><br>
-        <details class="color">
-            <summary>Color Schema</summary>
-            <p>#4C4B16 Nav bar & footer</p>
-            <p>#898121 FAQ section</p>
-            <p>#E6C767 Body</p>
-        </details>
-    <!-- Business Directory Section -->
-    <section class="directory">
+    </section>
+    <br><br><br>
+    <section class="purpose">
+        <h1>Our website serves as a central hub for business owners, entrepreneurs, and community leaders to connect, grow, and thrive. Our purpose is to provide valuable resources, information, and services to promote economic development, advocacy, and community engagement in Akwa Ibom, Uyo.</h1>
+    </section>
+    <br><br><br>
+    <section class="FAQ">
+        <h1>FAQ</h1>
+        <a href="">I'm thinking of starting a new retail business in downtown [City]. What resources and support can the Chamber provide to help me get started?</a>
+        <br><br><br>
+    </section>
+    <br><br><br>
+    <!-- Business Directory Section with ID reference -->
+    <section id="directory-section" class="directory">
         <h2>Business Directory</h2>
         <div class="directory-list">
-            
         </div>
     </section>
-    <!-- Business Directory Section -->
+    <!-- New Business Directory Section -->
     <section class="directory">
-        <h2> New Business Directory</h2>
+        <h2>New Business Directory</h2>
         <div class="directory-list" id="directory-list"></div>
     </section>
-
     <!-- Events Section -->
     <section class="events">
         <h2>Upcoming Events</h2>
         <div class="event-list">
-            
         </div>
     </section>
-
     <!-- Membership Section -->
     <section class="membership">
         <h2>Join Our Chamber</h2>
         <p>Benefits of membership</p>
         <button>Learn More</button>
     </section>
-
-
     <!-- Footer Section -->
-     <section class="footer">
-    <footer >
-        <h3>&copy; <span id="current-year"></span> John Aasada Nigeria </h3>
+    <section class="footer">
+        <footer>
+            <h3>&copy; <span id="current-year"></span> John Aasada Nigeria </h3>
             <p>Last modified on: <span id="last-modified-date"></span></p>
-    </footer>
-</section>
+        </footer>
+    </section>
+    <script>
+        // Add event listener to smooth scroll to anchor
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
